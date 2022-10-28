@@ -143,5 +143,15 @@ function fruits(){
     
     fruitGroup.add(fruit);
     fruit.velocityX=5; 
+    
+    position = Math.round(random(1,2)); 
+    {if(position==1) 
+    fruit.x=600; fruit.velocityX=-(7+(score/4)); } 
+    { if(position==2)
+      { fruit.x=0; 
+      //Increase the velocity of fruit after score 4 or 10 
+      fruit.velocityX= (7+(score/4)); 
+      } 
+    }
   }
-}
+ }
