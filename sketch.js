@@ -144,6 +144,11 @@ function fruits(){
     fruitGroup.add(fruit);
     fruit.velocityX=5; 
     
+    if(World.frameCount%80===0)
+    {position = Math.round(random(1,2)); 
+     fruit=createSprite(400,200,20,20); 
+     console.log(position) }
+    
     position = Math.round(random(1,2)); 
     {if(position==1) 
     fruit.x=600; fruit.velocityX=-(7+(score/4)); } 
